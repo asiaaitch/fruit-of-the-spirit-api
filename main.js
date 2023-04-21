@@ -1,7 +1,7 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const rapperName = document.querySelector('input').value
+    const fruitName = document.querySelector('input').value
     try{
         const response = await fetch(`https://fruit-of-the-spirit-api.onrender.com/api/${fruitName}`)
         const data = await response.json()
